@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Four Boxes</title>
+    <style>
+      /* CSS code for the container */
+
+      .BC {
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1000px;
+         margin: 0 auto;
+         align-items: center; /* Add this line */
+         height: 100vh;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto;
+        align-items: center; /* Add this line */
+        height: 100vh; /* Add this line */
+      }
+
+      /* CSS code for the boxes */
+      .box {
+        color: white;
+        flex-basis: calc(50% - 10px);
+        margin-top: 6px;
+        height: 200px;
+        background-color: #009933; /* Green background */
+        margin-bottom: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+
+
+      }
+
+      .button{
+        color: #009933;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="BC">
+    <div class="container">
+      <div class="box">
+        <h2>Meet as Video</h2>
+        <p>Click below to join the meeting</p>
+        <button class="button">Join Meeting</button>
+      </div>
+      <div class="box">
+        <h2>Test Your Camera</h2>
+        <p>Enter your name and click below to test your camera</p>
+        <input type="text" placeholder="Enter your name">
+        <button class="button">Test Camera</button>      </div>
+      <div class="box">
+        <h2>Teacher Assistant</h2>
+        <p>Click below to access attendees sheet and assignments</p>
+        <button class="button">Projects</button>
+        <button class="button">Attendees</button>
+
+        <div class="icon"></div>
+        <div class="icon"></div>
+      </div>
+      <div class="box">
+        <h2>Feedback</h2>
+        <br>
+        <input type="text" placeholder="Enter your comment">
+        <button class="button">Comment</button>
+    </div>
+  </body>
+</div>
+</html>
